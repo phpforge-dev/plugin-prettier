@@ -1,0 +1,10 @@
+{
+  "id": "phpforge.prettier",
+  "name": "Prettier",
+  "version": "1.0.0",
+  "minIdeVersion": "0.2.10",
+  "main": "main.js",
+  "description": "Formatador Prettier offline para JavaScript, TypeScript, Vue, JSON, HTML, CSS, SCSS, Markdown e YAML. Lê configurações JSON/YAML do projeto; PHP usa o formatador próprio da IDE.",
+  "activation": {"languages": ["javascript", "typescript", "vue", "json", "html", "css", "scss", "markdown", "yaml"]},
+  "permissions": ["project.read"]
+}
