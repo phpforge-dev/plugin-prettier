@@ -15,3 +15,7 @@ for (const name of ['prettier.txt','yaml.txt','ignore.txt','prettier-third-party
  const path=dir+'/licenses/'+name;
  await writeFile(path,(await readFile(path,'utf8')).replaceAll('\r\n','\n'));
 }
+
+// JavaScript string literals may contain NUL; encode them for the IDE source transport.
+const entry=dir+'/main.js';
+await writeFile(entry,(await readFile(entry,'utf8')).replaceAll('\u0000','\\x00'));
